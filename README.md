@@ -4,10 +4,6 @@ This is a Streamlit-based application that enables users to interact with Kevin,
 
 ---
 
-![Alt Text](Screenshot (625).png)
-
----
-
 ## Features
 - **Audio Input**: Speak to Kevin using the built-in audio recorder.
 - **Speech-to-Text**: Transcribes user audio input into text using Google Speech Recognition.
