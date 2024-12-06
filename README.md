@@ -27,21 +27,19 @@ Ensure you have the following installed on your system:
 ---
 
 ## Installation
+-Download Ollama, make Kevin using the ModelFile
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/chat-with-kevin.git
-   cd chat-with-kevin
+   git clone https://github.com/AbinJohn1632/Kevin_Chatbot_llama3.2.git
+   cd Kevin_Chatbot_llama3.2
    ```
 
 2. Install the required Python packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-3. Start the Ollama server and ensure the `Kevin` model is loaded:
+3. Making Kevin:
    ```bash
-   ollama serve
-   ollama import kevin
+   ollama create Kevin -f ModelFile
+   ollama run Kevin #running Kevin in cmd
    ```
 
 ---
@@ -62,7 +60,7 @@ Ensure you have the following installed on your system:
 
 ## File Structure
 - `app.py`: Main application file containing the logic for audio recording, transcription, AI responses, and history management.
-- `requirements.txt`: Lists the Python dependencies for the project.
+- `ModelFile`: file with Kevin description for the Ollama create from method.
 
 ---
 
@@ -85,5 +83,5 @@ Ensure you have the following installed on your system:
 
 ## Acknowledgments
 - [Streamlit](https://streamlit.io) for building a powerful and easy-to-use web app framework.
-- [Ollama](https://ollama.ai) for providing the Kevin language model.
+- [Ollama](https://ollama.ai) for providing the llama3.2 language model.
 - [Google Speech Recognition](https://cloud.google.com/speech-to-text) for accurate transcription. 
